@@ -17,7 +17,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
-   
+        let url = URL(string: "https://raw.githubusercontent.com/atilsamancioglu/BTK-iOSDataSet/master/dataset.json")
+        
+        Webservice().haberleriIndir(url: url!) { (haberler) in
+            if let haberler = haberler {
+                print(haberler)
+            }
+        }
         
     }
     
