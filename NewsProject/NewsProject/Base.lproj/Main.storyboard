@@ -20,33 +20,38 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="143" id="eIk-jj-Ghd" customClass="NewsCell" customModule="NewsProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="143"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="133" id="eIk-jj-Ghd" customClass="NewsCell" customModule="NewsProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eIk-jj-Ghd" id="cF4-Ae-0et">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FE4-KK-Wrd">
                                                     <rect key="frame" x="20" y="26" width="374" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="374" id="dDt-ZB-s0A"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2B-aQ-7dL">
-                                                    <rect key="frame" x="20" y="92" width="374" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Story" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2B-aQ-7dL">
+                                                    <rect key="frame" x="20" y="62" width="374" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Xnk-Zk-etj"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="I2B-aQ-7dL" firstAttribute="top" secondItem="FE4-KK-Wrd" secondAttribute="bottom" constant="45" id="IMk-yf-oKS"/>
-                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="leading" secondItem="cF4-Ae-0et" secondAttribute="leadingMargin" id="POn-rw-7Uu"/>
-                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="top" secondItem="cF4-Ae-0et" secondAttribute="topMargin" constant="15" id="TKW-K5-tD8"/>
-                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="trailing" secondItem="cF4-Ae-0et" secondAttribute="trailingMargin" id="mug-Mr-7FL"/>
-                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="trailing" secondItem="I2B-aQ-7dL" secondAttribute="trailing" id="yVh-hU-n5q"/>
-                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="leading" secondItem="I2B-aQ-7dL" secondAttribute="leading" id="yzt-fE-RNg"/>
+                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="leading" secondItem="cF4-Ae-0et" secondAttribute="leadingMargin" id="7KL-UX-Z0d"/>
+                                                <constraint firstItem="I2B-aQ-7dL" firstAttribute="top" secondItem="FE4-KK-Wrd" secondAttribute="bottom" constant="15" id="SnK-16-8b2"/>
+                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="top" secondItem="cF4-Ae-0et" secondAttribute="topMargin" constant="15" id="ir8-4f-cr4"/>
+                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="leading" secondItem="I2B-aQ-7dL" secondAttribute="leading" id="sng-Sd-ykd"/>
+                                                <constraint firstItem="FE4-KK-Wrd" firstAttribute="trailing" secondItem="I2B-aQ-7dL" secondAttribute="trailing" id="yQ2-1A-Tag"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -60,10 +65,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kjq-fm-boP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IZw-6s-cdb"/>
-                            <constraint firstItem="kjq-fm-boP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SGf-DH-Dla"/>
-                            <constraint firstItem="kjq-fm-boP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="etT-YE-nsX"/>
-                            <constraint firstItem="kjq-fm-boP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rBg-4Y-Fy9"/>
+                            <constraint firstItem="kjq-fm-boP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A30-eH-gGi"/>
+                            <constraint firstItem="kjq-fm-boP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QEE-vY-kXJ"/>
+                            <constraint firstItem="kjq-fm-boP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QPm-2H-g0x"/>
+                            <constraint firstItem="kjq-fm-boP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v7q-gD-Vdx"/>
                         </constraints>
                     </view>
                     <connections>

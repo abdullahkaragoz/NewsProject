@@ -16,6 +16,7 @@
 		CC843F2B282177B80052727E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC843F2A282177B80052727E /* Assets.xcassets */; };
 		CC843F2E282177B80052727E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC843F2C282177B80052727E /* LaunchScreen.storyboard */; };
 		CC843F3628217B820052727E /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC843F3528217B820052727E /* NewsCell.swift */; };
+		CCEA448D2821FE130001A271 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA448C2821FE130001A271 /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CC843F2D282177B80052727E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC843F2F282177B80052727E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC843F3528217B820052727E /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		CCEA448C2821FE130001A271 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		CC1452FB2821BB7600C4DEB0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CCEA448C2821FE130001A271 /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				CC843F22282177B40052727E /* AppDelegate.swift in Sources */,
 				CC1453022821BEE900C4DEB0 /* Webservice.swift in Sources */,
 				CC843F3628217B820052727E /* NewsCell.swift in Sources */,
+				CCEA448D2821FE130001A271 /* NewsViewModel.swift in Sources */,
 				CC1453002821BBED00C4DEB0 /* News.swift in Sources */,
 				CC843F24282177B40052727E /* SceneDelegate.swift in Sources */,
 			);
